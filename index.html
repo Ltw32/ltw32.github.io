@@ -197,18 +197,18 @@
          }
          .gamelink{
          background-color:#0038a0;
-         border: none;
-         width: 100%;
+         border: 2px #003088 solid;
+         width:25%;
          color: #EDF2F4;
          padding: 32px 32px;
          text-decoration: none;
-         display: inline-block;
          cursor: pointer;
+         float:left;
          }
          .gotd{
          background-color:#003088;
          color:  #EDF2F4;
-         border: none;
+         border: 2px #001131 solid;
          width: 100%;
          padding: 32px 32px;
          text-align: center;
@@ -219,6 +219,7 @@
          }
          .gotd:hover {
             background-color:#0046c7;
+            border: 2px #003088 solid;
          }
          .collapsible {
          font-family: 'Nunito', sans-serif;
@@ -227,12 +228,29 @@
          cursor: pointer;
          padding: 32px;
          width: 100%;
-         border: none;
+         border:none;
          text-align: left;
-         outline: none;
+         outline:none;
          font-size: 15px;
+         float:left;
+         }
+         .collapsible-2 {
+         font-family: 'Nunito', sans-serif;
+         background-color:#003088;
+         color:  #EDF2F4;
+         cursor: pointer;
+         padding: 32px;
+         width: 100%;
+         border: 2px #00215e solid;
+         text-align: left;
+         outline:none;
+         font-size: 15px;
+         float:left;
          }
          .games .collapsible:hover {
+          background-color: #0046c7;
+         }
+         .collapsible-2:hover {
           background-color: #0046c7;
          }
          .active {
@@ -245,13 +263,20 @@
          float: right;
          margin-left: 5px;
          }
+         .collapsible-2:after {
+         content: '\002B';
+         color: white;
+         font-weight: bold;
+         float: right;
+         margin-left: 5px;
+         }
          .content {
-         width: 110%;
+         width: 100%;
          font-family: 'Nunito', sans-serif;
          max-height: 0;
          overflow: hidden;
          transition: max-height 0.2s ease-out;
-         background-color: #1A1C25;
+         background-color: #0038a0;
          }
          .badge {
          top: -10px;
@@ -385,13 +410,14 @@
          <a href="games/fancypants.html" class="gotd">Fancypants</a> 
          <a href="N64Wasm-master/dist/index.html" class="gotd">N64 Emulator</a>
          <div class="games">
-            <button class="collapsible">Favorite Games</button>
+            <button class="collapsible-2">Favorite Games</button>
             <div class="content">
                <a href="N64Wasm-master/dist/index.html" class="gamelink">Zelda Ocarina of Time</a>
                <a href="Quake1-master/Quake1.htm" class="gamelink">Quake</a>
                <a href="Quake3-master/Quake3.htm" class="gamelink">Quake 3</a>
                <a href="eaglercraft-main/eaglercraft-main/stable-download/web/index.html" class="gamelink">Minecraft</a> 
                <a href="games/motox3m/index.html" class="gamelink">Motox3m</a> 
+               <a href="games/motox3m2/index.html" class="gamelink">Motox3m 2</a>
                <a href="bwag/index.html" class="gamelink">Bagel With a Gun</a>
                <a href="bagelroyal/index.html" class="gamelink">Bagel Royal</a> 
                <a href="games/pedro.html" class="gamelink">My Friend Pedro</a> 
@@ -410,7 +436,7 @@
                <a href="games/bloonstd4.html" class="gamelink">Bloons Tower Defense 4</a> 
                <a href="orbitron.html" class="gamelink">Orbitron</a> 
             </div>
-            <button class="collapsible">2D Platformer Games</button>
+            <button class="collapsible-2">2D Platformer Games</button>
             <div class="content">
                <a href="vex3/index.html" class="gamelink">Vex 3</a> 
                <a href="vex4/index.html" class="gamelink">Vex 4</a> 
@@ -444,7 +470,7 @@
                <a href="hexgl.html" class="gamelink">Hexgl</a> 
                <a href="games/cube.html" class="gamelink">Cube</a> 
             </div>
-            <button class="collapsible">Puzzle Games</button>
+            <button class="collapsible-2">Puzzle Games</button>
             <div class="content">
                <a href="2048.html" class="gamelink">2048</a>
                <a href="games/tetris.html" class="gamelink">Tetris</a> 
@@ -474,7 +500,7 @@
                <a href="games/miniputt.html" class="gamelink">Mini Putt</a> 
                <a href="games/dadnme.html" class="gamelink">Dad n' Me</a> 
             </div>
-            <button class="collapsible">Shooter Games</button>
+            <button class="collapsible-2">Shooter Games</button>
             <div class="content">
                <a href="Quake1-master/Quake1.htm" class="gamelink">Quake</a>
                <a href="Quake3-master/Quake3.htm" class="gamelink">Quake 3</a>
@@ -486,11 +512,6 @@
                <a href="games/duckhunt.html" class="gamelink">Duck Hunt</a> 
                <a href="games/alien.html" class="gamelink">Alien Hominid</a> 
                <a href="games/appleshoot.html" class="gamelink">Apple Shoot</a> 
-            </div>
-            <button class="collapsible">Racing Games</button>
-            <div class="content">
-               <a href="games/motox3m/index.html" class="gamelink">Motox3m</a> 
-               <a href="games/motox3m2/index.html" class="gamelink">Motox3m2</a> 
             </div>
             <button class="collapsible">Retro Games</button>
             <div class="content">
@@ -508,7 +529,7 @@
                <a href="games/tetris.html" class="gamelink">Tetris</a> 
                <a href="space.html" class="gamelink">Space Invaders</a> 
             </div>
-            <button class="collapsible">Other Games</button>
+            <button class="collapsible-2">Other Games</button>
             <div class="content">
                <a href="games/sas2.html" class="gamelink">Swords and Sandals 2</a> 
                <a href="games/sas.html" class="gamelink">Swords and Sandals</a> 
@@ -628,6 +649,23 @@
                 }
                 var coll = document.getElementsByClassName("collapsible");
          var i;
+         
+         
+         for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+         }
+         
+         var coll = document.getElementsByClassName("collapsible-2");
+         var i;
+         
          
          for (i = 0; i < coll.length; i++) {
           coll[i].addEventListener("click", function() {
