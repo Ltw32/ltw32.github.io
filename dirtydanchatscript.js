@@ -218,10 +218,7 @@ drone.on('error', error => {
 
 function getRandomName() {
 
-
- return "Dirty Dan";
-
-
+ return "Logan";
 
 }
 
